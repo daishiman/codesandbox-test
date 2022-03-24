@@ -11,6 +11,7 @@ export default function App() {
       <InlineStyle />
       <CssModules />
       <StyledJs />
+      <StyledComponents />
     </div>
   );
 }
