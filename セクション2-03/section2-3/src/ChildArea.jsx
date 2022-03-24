@@ -18,7 +18,7 @@ export const ChildArea = memo((props) => {
   return (
     <>
       {open ? (
-        <div style={style}>
+        <div style = {style}>
           <p>子コンポーネント</p>
           <button onClick={onClickClose}>閉じる</button>
         </div>
