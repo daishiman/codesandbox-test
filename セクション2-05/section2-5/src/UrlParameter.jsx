@@ -6,10 +6,10 @@ export const UrlParameter = () => {
 	const query = new URLSearchParams(search);
 	console.log(query);
 	return (
-	  <div>
-	    <h1>UrlParameterページです</h1>
+		<div>
+			<h1>UrlParameterページです</h1>
 			<p>パラメータは {id} です　</p>
 			<p>クエリーパラメータは {query.get("name")} です　</p>
-	  </div>
+		</div>
 	);
 }
