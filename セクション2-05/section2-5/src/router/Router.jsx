@@ -15,7 +15,9 @@ export const Router = () => {
           <Switch>
             {page1Routes.map((route) => (
               <Route
-                key={route.path}
+
+
+              key={route.path}
                 exact={route.exact}
                 path={`${url}${route.path}`}>
                 {route.children}
