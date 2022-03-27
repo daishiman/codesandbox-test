@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /** TypeScriptの基本の型 */
 
+import React from 'react';
 // boolean
 let bool: boolean = true;
 
@@ -29,7 +30,7 @@ const funcA = (): void => {
 let null1: null = null;
 
 // undefined
-let undefined: undefined = undefined;
+// let undefined: undefined = undefined;
 
 // object
 let obj1: object = {};
