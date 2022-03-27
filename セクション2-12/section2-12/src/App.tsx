@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.css';
-import { Button, ChakraProvider } from '@chakra-ui/react';
-import theme from './theme/theme';
+import { ChakraProvider } from '@chakra-ui/react';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+import theme from './theme/theme';
+import { Router } from './router/Router';
+
+export default function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Button colorScheme="teal">ボタン</Button>
-      <p>ああああああ</p>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </ChakraProvider>
   );
 }
-
-export default App;
