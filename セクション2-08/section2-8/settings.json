@@ -1,0 +1,126 @@
+{
+	"editor.renderWhitespace": "boundary",
+	"terminal.integrated.inheritEnv": false,
+	"editor.tabSize": 2,
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true, // 保存時にコードが整形される
+	"liveServer.settings.donotShowInfoMsg": true,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"php-cs-fixer.lastDownload": 1648132555152,
+	"editor.insertSpaces": false,
+	"editor.lineNumbers": "on",
+	"editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+	"editor.wordWrap": "on",
+	"diffEditor.wordWrap": "on",
+	"workbench.editor.enablePreview": false,
+	"[css]": {
+		"editor.tabSize": 2,
+		"editor.suggest.insertMode": "replace",
+		"gitlens.codeLens.scopes": ["document"]
+	},
+	"[scss]": {
+		"editor.tabSize": 2,
+		"editor.suggest.insertMode": "replace",
+		"gitlens.codeLens.scopes": ["document"]
+	},
+	"[php]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"files.autoSave": "onFocusChange", // タブやウィンドウがフォーカスを失うと自動保存する
+	"window.openFilesInNewWindow": "off", // 既に開いているウインドウがあればそこに表示する
+	"workbench.editor.tabSizing": "shrink", // タブの名前の長さに応じてタブの幅が変更される
+	"editor.bracketPairColorization.enabled": true, // 開始と終了のブラケットをセットで同じカラーにする
+	"editor.guides.bracketPairs": true, // 開始と終了のブラケットにガイドが表示される
+	"editor.suggest.snippetsPreventQuickSuggestions": false, // タブステップ中も予測変換を有効にする
+	"javascript.suggest.autoImports": true, // importが入力補完される js
+	"typescript.suggest.autoImports": true, // importが入力補完される ts
+	"javascript.updateImportsOnFileMove.enabled": "always", // ファイルを移動した時にimportのパスが変わっても自動で更新される js
+	"typescript.updateImportsOnFileMove.enabled": "always", // ファイルを移動した時にimportのパスが変わっても自動で更新される ts
+	"javascript.inlayHints.parameterNames.enabled": "all", // 引数の名前が表示される js
+	"typescript.inlayHints.parameterNames.enabled": "all", // 引数の名前が表示される ts
+	"workbench.tree.renderIndentGuides": "always", // ファイルツリーにインデントのガイド線を表示する
+	"terminal.integrated.copyOnSelection": true, // ターミナルで選択するとコピー
+	"terminal.integrated.rightClickBehavior": "paste", // ターミナルで右クリックで貼り付けできる
+	"editor.cursorStyle": "block", // vscodeのカーソルを変更する
+	"workbench.colorCustomizations": {
+		"editorCursor.foreground": "#f858f07f",
+		"terminalCursor.foreground": "#f858f07f",
+		"statusBar.background": "#294372",
+		"statusBar.noFolderBackground": "#294372",
+		"statusBar.debuggingBackground": "#294372"
+	},
+	"editor.cursorBlinking": "expand", // vscodeのカーソルを変更する
+	"editor.cursorSmoothCaretAnimation": true, // カーソルがニュルッと移動する
+	// VSCodeのレイアウトを変更する
+	"workbench.editor.showTabs": true, // タブの表示非表示非表示
+	"workbench.sideBar.location": "right", // サイドバーの位置を制御
+	"workbench.activityBar.visible": true, // ワークベンチ内のアクティビティバーの表示を制御
+	"workbench.statusBar.visible": true,
+	"editor.minimap.enabled": false, // ミニマップを消し去る
+	"window.zoomLevel": 0.5,
+	"editor.fontSize": 14,
+	"terminal.integrated.fontSize": 13,
+	"debug.console.fontSize": 14,
+	"workbench.tree.indent": 16, // ファイルツリーにインデントのサイズを変更する
+	"editor.mouseWheelZoom": true, //Ctrl + マウスホイールで文字サイズ変更
+	"explorer.openEditors.visible": 0, // エクスプローラーから「OPEN EDITORS」を消し去る
+	"workbench.editor.openPositioning": "left", // エディタを開く場所を制御します。現在アクティブなエディタの左側、あるいは、右側のエディタを開くには、 'left'または 'right'を選択します。現在アクティブなエディタとは別にエディタを開くには、 'first'または 'last'を選択します。
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"cSpell.userWords": [
+		"akaden",
+		"amountl",
+		"Blance",
+		"Consts",
+		"daiei",
+		"datas",
+		"Doesnt",
+		"Dont",
+		"Exeption",
+		"expences",
+		"introductio",
+		"Ledy",
+		"LINEID",
+		"maekabu",
+		"Mentee",
+		"mypage",
+		"numberl",
+		"obic",
+		"offseted",
+		"offsetted",
+		"Payble",
+		"psct",
+		"RESOURCEID",
+		"selfintroduction",
+		"Senpai",
+		"subquery",
+		"suichoku",
+		"Todos",
+		"Trate"
+	],
+	"editor.foldingMaximumRegions": 10000,
+	"editor.formatOnSave": true,
+	"editor.formatOnSaveMode": "modificationsIfAvailable",
+	"reactSnippets.settings.prettierEnabled": true,
+	"prettier.useTabs": true,
+	"swaggerViewer.defaultPort": 8100,
+	"swaggerViewer.defaultHost": "localhost:8100/swagger-ui/#/", //vscode の window 上部の名前を変更
+	"vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim", // nvim のパス設定
+	"vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.vim", // nvim の設定ファイルの場所
+	// vimステータスバーのモードによる色変更
+	// 注意: Escをjjにバインドさせている場合、setting.jsonを開いたままモード遷移を行うとうまくいかない
+	"vim.statusBarColorControl": true,
+	"vim.statusBarColors.normal": "#294372",
+	"vim.statusBarColors.insert": "#e27b04",
+	"vim.statusBarColors.visual": "#cc3338",
+	"vim.statusBarColors.visualline": "#cc3338",
+	"vim.statusBarColors.visualblock": "#cc3338",
+	"vim.statusBarColors.replace": "#a5382c",
+	"prettier.tabWidth": 1,
+	"workbench.colorTheme": "Deepdark Material Theme | Full Black Version"
+}
