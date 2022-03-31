@@ -20,5 +20,5 @@ export const PrimaryButton: VFC<Props> = memo((props) => {
     >
       {children}
     </Button>
-  )
-})
+  );
+});
