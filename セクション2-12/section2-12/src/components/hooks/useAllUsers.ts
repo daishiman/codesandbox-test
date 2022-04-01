@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from 'axios';
 import { useCallback } from 'react';
 import { useState } from 'react';
@@ -20,6 +21,6 @@ export const useAllUsers = () => {
       }).finally(() => {
         setLoading(false);
       });
-  }, [showMessage])
+  }, [])
   return { getUsers, loading, users }
 };
