@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useCallback } from 'react';
 import { useState } from 'react';
 
-import { User } from '../types/api/user';
+import { User } from '../components/types/api/user';
 import { useMessage } from './useMessage';
 
 export const useAllUsers = () => {

@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 
-import { User } from '../types/api/user';
+import { User } from '../components/types/api/user';
 
 
 type Props = {
