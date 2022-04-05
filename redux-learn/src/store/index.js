@@ -2,10 +2,22 @@ import { createStore } from 'redux';
 
 const initialState = {
   count: 100,
+  posts: [
+    {
+      id: 1,
+      title: 'reduxについて',
+    },
+    {
+      id: 2,
+      title: 'reduxのhooksについて',
+    },
+  ],
 };
 
 const reducer = (state = initialState) => {
   return state;
 };
 
-export const store = createStore(reducer);
+const store = createStore(reducer);
+
+export default store;
