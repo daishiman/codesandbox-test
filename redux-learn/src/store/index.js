@@ -19,5 +19,6 @@ const reducer = (state = initialState) => {
 };
 
 const store = createStore(reducer);
+console.log(store.getState());
 
 export default store;
