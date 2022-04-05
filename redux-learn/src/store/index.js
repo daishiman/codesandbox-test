@@ -8,6 +8,4 @@ const reducer = (state = initialState) => {
   return state;
 };
 
-const store = createStore(reducer);
-
-export default store;
+export const store = createStore(reducer);
