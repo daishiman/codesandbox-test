@@ -1,21 +1,24 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-export default function Count() {
-  const count = useSelector((state) => state.countReducer.count);
-  const posts = useSelector((state) => state.postsReducer.posts);
+function Count() {
+  const count = useSelector((state) => state.count);
+  const dispatch = useDispatch();
+  const increase = () => {
+    dispatch({ type: 'INCREASE_COUNT' });
+  };
+  const decrease = () => {
+    dispatch({ type: 'DECREASE_COUNT' });
+  };
 
   return (
     <>
       <div>Countコンポーネント:{count}</div>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>
-            {post.id}
-            {post.title}
-          </li>
-        ))}
-      </ul>
+      <button onClick={increase}>UP</button>
+      <br />
+      <button onClick={decrease}>Down</button>
     </>
   );
 }
+
+export default Count;
