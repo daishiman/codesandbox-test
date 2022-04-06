@@ -4,7 +4,7 @@ import './App.css';
 import Count from './components/count';
 
 export default function App() {
-  const count = useSelector((state) => state.count);
+  const count = useSelector((state) => state.countReducer.count);
   return (
     <div className="App">
       <h1>Redux Learn</h1>
