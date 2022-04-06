@@ -2,6 +2,7 @@ import { createStore } from 'redux';
 
 const initialState = {
   count: 0,
+  posts: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -14,6 +15,8 @@ const reducer = (state = initialState, action) => {
       return {
         count: state.count - 1,
       };
+    case 'GET_POST_DATA':
+      return { ...state, posts: action.payload };
     default:
       return state;
   }

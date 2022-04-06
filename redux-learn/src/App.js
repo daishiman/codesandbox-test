@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Count from './components/count';
-import { Post } from './components/Post';
+import Post from './components/Post';
 
 function App() {
   return (
