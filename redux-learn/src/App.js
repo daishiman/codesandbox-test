@@ -1,15 +1,30 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { connect } from 'react-redux';
 import './App.css';
-import Count from './components/count';
 
-export default function App() {
-  const count = useSelector((state) => state.countReducer.count);
+function App({ dispatch, count }) {
+  const increase = () => {
+    dispatch({ type: 'INCREASE_COUNT' });
+  };
+  const decrease = () => {
+    dispatch({ type: 'DECREASE_COUNT' });
+  };
   return (
     <div className="App">
       <h1>Redux Learn</h1>
       <p>Count:{count}</p>
-      <Count />
+      <button onClick={increase}>Up</button>
+      <br />
+      <button onClick={decrease}>Down</button>
     </div>
   );
 }
+
+const mapStateToProps = (state) => {
+  return {
+    count: state.count,
+    posts: state.posts,
+  };
+};
+
+export default connect(mapStateToProps)(App);

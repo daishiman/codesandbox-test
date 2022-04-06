@@ -1,36 +1,25 @@
-import { combineReducers, createStore } from 'redux';
+import { createStore } from 'redux';
 
-const countReducer = (
-  state = {
-    count: 50,
-  }
-) => {
-  return state;
+const initialState = {
+  count: 0,
 };
 
-const postsReducer = (
-  state = {
-    posts: [
-      {
-        id: 1,
-        title: 'reduxについて',
-      },
-      {
-        id: 2,
-        title: 'reduxのhooksについて',
-      },
-    ],
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case 'INCREASE_COUNT':
+      return {
+        count: state.count + 1,
+      };
+    case 'DECREASE_COUNT':
+      return {
+        count: state.count - 1,
+      };
+    default:
+      return state;
   }
-) => {
-  return state;
 };
 
-const rootReducer = combineReducers({
-  countReducer,
-  postsReducer,
-});
-
-const store = createStore(rootReducer);
+const store = createStore(reducer);
 console.log(store.getState());
 
 export default store;
